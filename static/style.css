@@ -1,0 +1,378 @@
+nav{
+    background-color: rgb(13, 13, 57);/* A light blue background */
+    border: 2px solid rgba(0, 0, 0, 0.2); /* A thin grey border */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* A subtle bottom shadow */
+    background-image: linear-gradient(to right, rgb(14, 14, 56), rgb(75, 25, 25)); /* Gradient from light blue to dark blue */
+}
+
+nav ul li a{
+    color: white; /*the text colour is white */
+    text-decoration: none; /* Remove underline */
+    font-family: Arial, sans-serif; /* Specify a font family */
+    padding: 10px 20px;
+}
+
+
+nav ul li a:hover {
+    background-color: rgba(77, 77, 126); /* Change background on hover */
+    color: rgb(47, 45, 45); /* Change text color on hover */
+    transition: background-color 0.5s ease; /* Smooth background color transition */
+    text-decoration: underline;
+    border-radius: 10px;
+}
+
+nav ul li a.active {
+    background-color: rgb(51, 51, 51); /* Darker background for active tab */
+    color: white; /* White text for better contrast */
+}
+  
+
+nav ul{
+    display: flex;/* Make the list items display horizontally */
+    list-style: none; /* Remove bullet points */
+    padding-left: 20px; /*Add padding on the left side */
+    padding-right: 20px; /*Add padding on the right side*/
+}
+
+#home{
+    background-image: url("../Images/Book.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: 600px;
+    background-attachment: fixed; 
+}
+
+
+.quote {
+    color: rgb(243, 232, 232); /* Text color */
+    text-align: left; /* Align text to the left */
+    font-style: italic; /* Italic style */
+    position: absolute; /* Make the text element positionable */
+    bottom: 50px; /* Position 20 pixels from the bottom */
+    left: 20px; /* Position 20 pixels from the left */
+    font-size: 20px;
+    animation: fadeIn 8s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; } /* Start invisible */
+    to { opacity: 1; } /* Fade in to full opacity */
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer {
+    background-image: linear-gradient(to right, rgb(16, 16, 44), rgb(75, 25, 25)); /* Gradient from light blue to dark blue */
+    color: white; /* White text for better contrast */
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-container > div {
+    flex: 1;
+    margin: 20px;
+    min-width: 200px;
+}
+
+.footer-container h3 {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    border-bottom: 2px solid #7c7c7c;
+    padding-bottom: 10px;
+}
+
+.footer-container p, .footer-container ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-container a {
+    color: #b2d0ff; 
+    text-decoration: none;
+}
+
+.footer-container a:hover {
+    text-decoration: underline;
+    color: #3399ff;
+}
+
+.footer-links ul {
+    padding-left: 0;
+}
+
+.footer-links li {
+    margin: 10px 0;
+}
+
+.footer-links li a{
+    color: #fff9f9;
+}
+
+.footer-contact p {
+    margin: 10px 0;
+}
+
+.footer-social .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-social .social-icons a {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    color: #1c1212;
+    justify-content: space-between;
+    color: white; /* White for social media icons */
+}
+
+.footer-social .social-icons img {
+    width: 100%;
+    height: auto;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #777;
+    padding-top: 20px;
+    font-size: 0.9em;
+}
+
+/* search bar */
+#search{
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to right, rgb(14, 14, 56), rgb(75, 25, 25)); 
+    background-size: cover;
+    height: 600px; 
+    color: white;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+  
+main{
+    padding: 20px;
+}
+  
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+  
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+  
+form label {
+    margin-right: 10px;
+    color: white;
+}
+  
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+.search-button {
+    position: absolute; 
+    bottom: 180px; 
+    left: 20px;
+    padding: 15px 30px; /* Increased padding to make the button larger */
+    color: white; /* Text color */
+    background-image: linear-gradient(to right, rgb(14, 14, 56), rgb(75, 25, 25)); /* Gradient background */
+    border: none;
+    border-radius: 8px;
+    font-size: 16px; /* Increased font size for better visibility */
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-image: linear-gradient(to right, rgb(75, 25, 25), rgb(14, 14, 56)); /* Reverse gradient on hover */
+}
+  
+#searchQuery {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+
+button {
+    background-image: linear-gradient(to right,rgb(75, 25, 25), rgb(14, 14, 56) );
+    padding: 10px 20px;
+    background-color: rgb(75, 25, 25);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+  
+button:hover {
+    background-image: linear-gradient(to right, rgb(14, 14, 56), rgb(75, 25, 25));;
+}
+
+#searchResults{
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    max-height: 400px; /* Adjust as needed */
+    overflow-y: auto; /* Adds scroll if content overflows */
+}
+
+
+
+#contact{
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to right, rgb(14, 14, 56), rgb(75, 25, 25)); 
+    background-size: cover;
+    height: 600px; 
+    color: white;
+}
+
+.contact-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 500px;
+}
+
+.contact-form {
+    background-image: linear-gradient(to right,rgb(14, 14, 56), rgb(75, 25, 25));/* Card-like structure background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    max-width: 600px;
+    width: 100%;
+    height: 400px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    color: white;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: rgb(75, 25, 25); /* Matching accent color */
+    box-shadow: 0 0 5px rgba(75, 25, 25, 0.5); /* Soft focus effect */
+}
+
+.send-button {
+    padding: 10px 20px;
+    background-image: linear-gradient(to right, rgb(14, 14, 56), rgb(75, 25, 25)); /* Gradient background */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 1em;
+    text-align: center;
+}
+
+.send-button:hover {
+    background-image: linear-gradient(to right,rgb(75, 25, 25), rgb(14, 14, 56)); /* Slightly darker on hover */
+}
+
+@media (max-width: 600px) {
+    .contact-form {
+        padding: 15px;
+    }
+}
+
+
+#poet{
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to right, rgb(14, 14, 56), rgb(75, 25, 25)); 
+    background-size: cover;
+    height: 600px; 
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.filter-container {
+    display: flex; /*allign text horizontally */
+    justify-content: space-between;
+    align-content: space-between;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.filter {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+.filter label {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    color: #dbdbdc;
+}
+
+.filter select {
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #4f1313;
+}
+
+
+#applyFilter {
+    color: white;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 25px;
+    width: 60%;
+    height: 40px;
+}
+
+#filterResults {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-height: 400px; 
+    overflow-y: auto;
+}
